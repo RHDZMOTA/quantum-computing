@@ -1,0 +1,133 @@
+<html><head><title>Quantum Computing: Quantum Computing</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Daniel Hernández Mota | Rodrigo Hernández Mota" /><meta name="description" content="Quantum Computing for Mortals" /><meta name="og:image" content="/quantum-computing/img/poster.png" /><meta name="og:title" content="Quantum Computing: Quantum Computing" /><meta name="og:site_name" content="Quantum Computing" /><meta name="og:url" content="https://rhdzmota.github.io/quantum-computing/" /><meta name="og:type" content="website" /><meta name="og:description" content="Quantum Computing for Mortals" /><link rel="icon" type="image/png" href="/quantum-computing/img/favicon.png" /><meta name="twitter:title" content="Quantum Computing: Quantum Computing" /><meta name="twitter:image" content="https://rhdzmota.github.io/quantum-computing/img/poster.png" /><meta name="twitter:description" content="Quantum Computing for Mortals" /><meta name="twitter:card" content="summary_large_image" /><link rel="icon" type="image/png" sizes="16x16" href="/quantum-computing/img/favicon16x16.png" /><link rel="icon" type="image/png" sizes="24x24" href="/quantum-computing/img/favicon24x24.png" /><link rel="icon" type="image/png" sizes="32x32" href="/quantum-computing/img/favicon32x32.png" /><link rel="icon" type="image/png" sizes="48x48" href="/quantum-computing/img/favicon48x48.png" /><link rel="icon" type="image/png" sizes="57x57" href="/quantum-computing/img/favicon57x57.png" /><link rel="icon" type="image/png" sizes="60x60" href="/quantum-computing/img/favicon60x60.png" /><link rel="icon" type="image/png" sizes="64x64" href="/quantum-computing/img/favicon64x64.png" /><link rel="icon" type="image/png" sizes="70x70" href="/quantum-computing/img/favicon70x70.png" /><link rel="icon" type="image/png" sizes="72x72" href="/quantum-computing/img/favicon72x72.png" /><link rel="icon" type="image/png" sizes="76x76" href="/quantum-computing/img/favicon76x76.png" /><link rel="icon" type="image/png" sizes="96x96" href="/quantum-computing/img/favicon96x96.png" /><link rel="icon" type="image/png" sizes="114x114" href="/quantum-computing/img/favicon114x114.png" /><link rel="icon" type="image/png" sizes="120x120" href="/quantum-computing/img/favicon120x120.png" /><link rel="icon" type="image/png" sizes="128x128" href="/quantum-computing/img/favicon128x128.png" /><link rel="icon" type="image/png" sizes="144x144" href="/quantum-computing/img/favicon144x144.png" /><link rel="icon" type="image/png" sizes="150x150" href="/quantum-computing/img/favicon150x150.png" /><link rel="icon" type="image/png" sizes="152x152" href="/quantum-computing/img/favicon152x152.png" /><link rel="icon" type="image/png" sizes="196x196" href="/quantum-computing/img/favicon196x196.png" /><link rel="icon" type="image/png" sizes="310x310" href="/quantum-computing/img/favicon310x310.png" /><link rel="icon" type="image/png" sizes="310x150" href="/quantum-computing/img/favicon310x150.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" href="/quantum-computing/highlight/styles/default.css" /><link rel="stylesheet" href="/quantum-computing/css/style.css" /><link rel="stylesheet" href="/quantum-computing/css/palette.css" /><link rel="stylesheet" href="/quantum-computing/css/codemirror.css" /></head><body><header id="site-header"><div class="navbar-wrapper"><div class="container"><div class="row"><div class="col-xs-6"><a href="/quantum-computing/" class="brand"><div class="icon-wrapper"><span>Quantum Computing</span></div></a></div><div class="col-xs-6"><nav class="text-right"><ul class=""><li><a href="https://github.com/rhdzmota/quantum-computing"><i class="fa fa-github"></i><span class="hidden-xs">GitHub</span></a></li><li><a href="/quantum-computing/docs"><i class="fa fa-file-text"></i><span class="hidden-xs">Documentation</span></a></li></ul></nav></div></div></div></div><div class="jumbotron"><div class="container"><h1 class="text-center">Quantum Computing for Mortals</h1><h2></h2><p class="text-center"><a href="https://github.com/rhdzmota/quantum-computing" class="btn btn-outline-inverse">View on GitHub</a></p></div></div><div><ul class="horizontalNav">             <li><a class=" active " href="/quantum-computing/">Quantum Computing</a></li>  <li><a class="" href="/quantum-computing/nomenclature.html">Nomenclature and notation</a></li> </ul></div></header><main id="site-main"><section class="use"><div class="container"><div id="content"><h1 id="quantum-computing">Quantum Computing</h1>
+
+<p>This site aims to provide an introduction to the main ideas behind quantum computing as well as representing 
+them in a Scala Domain Specific Language (DSL).</p>
+
+<h2 id="why-quantum-computing">Why Quantum Computing</h2>
+
+<p>Or in other words: <strong>Why reinventing computing?</strong></p>
+
+<h3 id="short-answer">Short Answer</h3>
+
+<p>While classical computers can solve a huge set of problems there are still some interesting problems left unsolved in 
+both practical and theoretical sense. Some common examples involve <a href="">optimization</a> and <a href="">simulation</a>. Most of these problems have in common the <a href="">exponential scaling</a> effect. 
+This effect can make a complex problem practically unsolvable when certain size is reached due to 
+the computational power needed. Quantum computation offers a solution leveraging the physical phenomena of 
+<a href="https://www.youtube.com/watch?v=8kyJfAC4VAo">superposition</a> and <a href="https://www.youtube.com/watch?v=RmXasxLm43k">entanglement</a>. 
+This enable quantum computing to also scale exponentially as the problem’s size increases.</p>
+
+<p style="text-align:center;">
+<img src="https://www.researchgate.net/profile/Jashan_Singhal/publication/309653719/figure/fig1/AS:424491617656832@1478218096511/A-qubit-in-Hilbert-space-in-its-SU2-representation-top-and-the-same-qubit-on-the.png" alt="qubit" style="width: 50%" />
+</p>
+
+<p>Image credits <a href="https://www.researchgate.net/profile/Jashan_Singhal/publication/309653719/figure/fig1/AS:424491617656832@1478218096511/A-qubit-in-Hilbert-space-in-its-SU2-representation-top-and-the-same-qubit-on-the.png">here</a>.</p>
+
+<h3 id="long-answer">Long Answer</h3>
+
+<p>Hardware development took off in 1947 with the invention of the <a href="https://en.wikipedia.org/wiki/Transistor">transistor</a>.
+Since then, computing power has been following <a href="https://en.wikipedia.org/wiki/Moore%27s_law">Moore’s Law</a> (i.e. roughly doubling every two years). 
+Nonethless, this trend is expected to end in the first two decades of the twenty-first century due to fundamental 
+difficulties regarding the size of transistors (quantum effects begin to interfere with classical computing architectures).</p>
+
+<p>One possible solution to continue with the Moore’s Law is to change the computing paradigm onto one capable of taking 
+advantage of quantum systems. In essence, using quantum mechanics to perform computations instead of classical physics.</p>
+
+<p style="text-align:center;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Moore%27s_Law_Transistor_Count_1971-2016.png/1200px-Moore%27s_Law_Transistor_Count_1971-2016.png" alt="moore" style="width: 50%" />
+</p>
+
+<p>The idea of a <a href="https://en.wikipedia.org/wiki/Turing_machine">Turing Machine</a> proposed by Alan Turing in 1936 lead to the
+following thesis:</p>
+<blockquote>
+  <p>Any algorithmic process can be simulated efficiently using a turing machine.</p>
+</blockquote>
+
+<p>Where the measure of “efficiency” is mathematically defined by the field of computational complexity.</p>
+
+<p>A more general form of this thesis contemplates randomized algorithms that can efficiently solve problems that are 
+inefficiently solved by deterministic computing:</p>
+<blockquote>
+  <p>Any algorithmic process can be simulated efficiently using a probabilistic turing machine.</p>
+</blockquote>
+
+<p style="text-align:center;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Universal_Turing_machine.svg/1200px-Universal_Turing_machine.svg.png" alt="turing" style="width: 50%" />
+</p>
+
+<p>With this thesis, one would think that we could efficiently simulate a quantum system. Nonetheless, it has been shown 
+that trying to simulate a quantum system with a classical computer is far from efficient (in a mathematical sense). 
+Many experts speculate that there is no conceivable amount of progress in classical computation that would be able to
+overcome the gap between classical computing and the power of quantum computing.</p>
+
+<p>In this regard, David Deutsch in 1985 defined a computational device that would be capable of efficiently simulating 
+an arbitrary physical system based on the laws of physics. This device was then known as the <strong>Universal Quantum Computer</strong>. 
+This quantum computer challenged the Church-Turing thesis because it could efficiently solve computational problems 
+which have no efficient solution with probabilistic turing machines.</p>
+
+<p>Mathematically proved examples:</p>
+<ul>
+  <li>Finding the prime factors of an integer.</li>
+  <li>The discrete logarithm problem.</li>
+  <li>Search over an unstructured space.</li>
+</ul>
+
+<p>Nonetheless, designing and implementing quantum algorithms remains a hard problem!</p>
+
+<hr />
+<p>For more information:</p>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=JRIPV0dPAd4">A Beginner’s Guide To Quantum Computing by Talia Gershon</a></li>
+  <li><a href="https://www.ibm.com/blogs/research/2017/09/qc-how-it-works/">Quantum Computing by IBM</a></li>
+</ul>
+
+<h2 id="why-scala">Why Scala</h2>
+
+<p>The <a href="https://www.scala-lang.org/">Scala Programming Language</a> offers a combination of <a href="">Object Oriented Programming</a> 
+and <a href="">Functional Programming</a>. We consider that this model in combination with a strong type system best suites the 
+representation of quantum objects in a simulation environment. Moreover, Scala is known for it’s ability to create 
+DSLs (domain specific languages) and parallelism support.</p>
+
+<ul>
+  <li><strong>Object Oriented Programming</strong> enables us to create modular code and identify key 
+components of the theory as entities.</li>
+  <li><strong>Functional Programming</strong> allows us to write clean and maintainable code by following
+the rules of immutability, pure functions, composition and more. Also, the implementation</li>
+  <li><strong>DSL</strong>s facilitate the representation of the quantum-theory in the application logic.</li>
+  <li><strong>Parallelism</strong> makes more efficient to perform computing intensive simulations.</li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>To follow along with the theory we recommend:</p>
+<ul>
+  <li>Strong knowledge about <strong>linear algebra</strong>.</li>
+  <li>Familiarity with advanced concepts of <strong>computer science</strong>, <strong>physics</strong> and <strong>calculus</strong>.</li>
+</ul>
+
+<p>To run the examples you’ll need:</p>
+<ul>
+  <li><strong>Java 8</strong> or greater.
+    <ul>
+      <li>For debian-based systems: <code class="highlighter-rouge">sudo apt install openjdk-8-jdk</code></li>
+    </ul>
+  </li>
+  <li>Scala Build Tool (<a href="https://www.scala-sbt.org/index.html">SBT</a>)
+    <ul>
+      <li>Download for all platforms <a href="https://www.scala-sbt.org/download.html">here</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>If you are using Windows 10, we recommend running this software on the 
+Windows Subsystem for Linux (<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">WSL</a>).</p>
+
+<h2 id="structure">Structure</h2>
+
+<p>This notes rely heavily on the book <a href="https://www.amazon.com/Quantum-Computation-Information-10th-Anniversary/dp/1107002176">Quantum Computation and Quantum Information by Mchael A. Nielsen &amp; Issac L. Chuang</a>.</p>
+
+<h2 id="references">References</h2>
+
+<p>add references</p>
+</div></div></section><section class="technologies"><div class="container"><div class="row"></div></div></section></main><footer id="site-footer"><div class="container"><div class="row"><div class="col-xs-6"><p>Quantum Computing is designed and developed by <a href="" target="_blank">Daniel Hernández Mota | Rodrigo Hernández Mota</a></p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/rhdzmota/quantum-computing"><span class="fa fa-github"></span>View on GitHub</a></p></div></div><div class="row"><div class="col-xs-6"><p>Website built with <a href="https://47deg.github.io/sbt-microsites/" target="_blank">Sbt-microsites</a> - © 2016 <a href="https://www.47deg.com/" target="_blank">47 Degrees</a></p></div></div></div></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="/quantum-computing/highlight/highlight.pack.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/fsharp.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script><script>hljs.configure({languages:['scala','java','bash','haskell','fsharp','scala','python']});
+hljs.initHighlighting();
+              </script><script src="/quantum-computing/js/mathjax-config.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML,https://oscarvarto.github.io/learning-scala/js/mathjax-config.js"></script></body></html>

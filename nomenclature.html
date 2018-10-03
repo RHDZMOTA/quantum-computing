@@ -1,0 +1,99 @@
+<html><head><title>Quantum Computing: Nomenclature and notation</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Daniel Hernández Mota | Rodrigo Hernández Mota" /><meta name="description" content="Quantum Computing for Mortals" /><meta name="og:image" content="/quantum-computing/img/poster.png" /><meta name="og:title" content="Quantum Computing: Nomenclature and notation" /><meta name="og:site_name" content="Quantum Computing" /><meta name="og:url" content="https://rhdzmota.github.io/quantum-computing/" /><meta name="og:type" content="website" /><meta name="og:description" content="Quantum Computing for Mortals" /><link rel="icon" type="image/png" href="/quantum-computing/img/favicon.png" /><meta name="twitter:title" content="Quantum Computing: Nomenclature and notation" /><meta name="twitter:image" content="https://rhdzmota.github.io/quantum-computing/img/poster.png" /><meta name="twitter:description" content="Quantum Computing for Mortals" /><meta name="twitter:card" content="summary_large_image" /><link rel="icon" type="image/png" sizes="16x16" href="/quantum-computing/img/favicon16x16.png" /><link rel="icon" type="image/png" sizes="24x24" href="/quantum-computing/img/favicon24x24.png" /><link rel="icon" type="image/png" sizes="32x32" href="/quantum-computing/img/favicon32x32.png" /><link rel="icon" type="image/png" sizes="48x48" href="/quantum-computing/img/favicon48x48.png" /><link rel="icon" type="image/png" sizes="57x57" href="/quantum-computing/img/favicon57x57.png" /><link rel="icon" type="image/png" sizes="60x60" href="/quantum-computing/img/favicon60x60.png" /><link rel="icon" type="image/png" sizes="64x64" href="/quantum-computing/img/favicon64x64.png" /><link rel="icon" type="image/png" sizes="70x70" href="/quantum-computing/img/favicon70x70.png" /><link rel="icon" type="image/png" sizes="72x72" href="/quantum-computing/img/favicon72x72.png" /><link rel="icon" type="image/png" sizes="76x76" href="/quantum-computing/img/favicon76x76.png" /><link rel="icon" type="image/png" sizes="96x96" href="/quantum-computing/img/favicon96x96.png" /><link rel="icon" type="image/png" sizes="114x114" href="/quantum-computing/img/favicon114x114.png" /><link rel="icon" type="image/png" sizes="120x120" href="/quantum-computing/img/favicon120x120.png" /><link rel="icon" type="image/png" sizes="128x128" href="/quantum-computing/img/favicon128x128.png" /><link rel="icon" type="image/png" sizes="144x144" href="/quantum-computing/img/favicon144x144.png" /><link rel="icon" type="image/png" sizes="150x150" href="/quantum-computing/img/favicon150x150.png" /><link rel="icon" type="image/png" sizes="152x152" href="/quantum-computing/img/favicon152x152.png" /><link rel="icon" type="image/png" sizes="196x196" href="/quantum-computing/img/favicon196x196.png" /><link rel="icon" type="image/png" sizes="310x310" href="/quantum-computing/img/favicon310x310.png" /><link rel="icon" type="image/png" sizes="310x150" href="/quantum-computing/img/favicon310x150.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" href="/quantum-computing/highlight/styles/default.css" /><link rel="stylesheet" href="/quantum-computing/css/style.css" /><link rel="stylesheet" href="/quantum-computing/css/palette.css" /><link rel="stylesheet" href="/quantum-computing/css/codemirror.css" /></head><body><header id="site-header"><div class="navbar-wrapper navbar-inverse"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/quantum-computing/" class="brand"><div class="icon-wrapper"><span>Quantum Computing</span></div></a></div><nav class="text-right"><ul class=""><li><a href="https://github.com/rhdzmota/quantum-computing"><i class="fa fa-github"></i><span class="hidden-xs">GitHub</span></a></li><li><a href="/quantum-computing/docs"><i class="fa fa-file-text"></i><span class="hidden-xs">Documentation</span></a></li></ul></nav></div></div><div class="jumbotron" style="background-image:url('/quantum-computing/img/jumbotron_pattern.png')"></div><div><ul class="horizontalNav">             <li><a class="" href="/quantum-computing/">Quantum Computing</a></li>  <li><a class=" active " href="/quantum-computing/nomenclature.html">Nomenclature and notation</a></li> </ul></div></header><main id="site-main"><section class="use"><div class="container"><div id="content"><h1 id="nomenclature-and-notation">Nomenclature and Notation</h1>
+
+<p>Two level quantum systems are used as qubits usually with a zero state $\left| 0 \right&gt;$ that represents the 
+column vector $(1,0)$ and a one state $\left| 1 \right&gt;$ that represents the column vector $(0,1)$.</p>
+
+<p>A <strong>probability distribution</strong> is a finite set of real numbers $p_x$ such that $0 \leq p_x$ and $\sum_x p_x = 1$.</p>
+
+<h2 id="quantum-gates-and-circuit-symbols">Quantum gates and circuit symbols</h2>
+
+<ul>
+  <li>Hadamard</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\frac{1}{\sqrt{2}} \begin{bmatrix}1 & 1\\1 & -1\end{bmatrix} %]]></script>
+
+<ul>
+  <li>Pauli-X</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix}0 & 1\\1 & 0\end{bmatrix} %]]></script>
+
+<ul>
+  <li>Pauli-Y</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix}0 & -i\\i & 0\end{bmatrix} %]]></script>
+
+<ul>
+  <li>Pauli-Z</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix}1 & 0\\0 & -1\end{bmatrix} %]]></script>
+
+<ul>
+  <li>Phase</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix}1 & 0\\0 & i\end{bmatrix} %]]></script>
+
+<ul>
+  <li>$\pi / 8$</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix}1 & 0\\0 & e^{i \pi / 4}\end{bmatrix} %]]></script>
+
+<ul>
+  <li>controlled-NOT</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix}1 & 0 & 0 & 0\\0 & 1 & 0 & 0\\0 & 0 & 0 & 1\\0 & 0 & 1 & 0\end{bmatrix} %]]></script>
+
+<ul>
+  <li>Swap</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix}1 & 0 & 0 & 0\\0 & 0 & 1 & 0\\0 & 1 & 0 & 0\\0 & 0 & 0 & 1\end{bmatrix} %]]></script>
+
+<ul>
+  <li>controlled-Z</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix}1 & 0 & 0 & 0\\0 & 1 & 0 & 0\\0 & 0 & 1 & 0\\0 & 0 & 0 & -1\end{bmatrix} %]]></script>
+
+<ul>
+  <li>controlled-phase</li>
+</ul>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix}1 & 0 & 0 & 0\\0 & 1 & 0 & 0\\0 & 0 & 1 & 0\\0 & 0 & 0 & i\end{bmatrix} %]]></script>
+
+<ul>
+  <li>
+    <p>Toffoli</p>
+  </li>
+  <li>
+    <p>Fredkin (controlled-swap)</p>
+  </li>
+  <li>
+    <p>measurement</p>
+  </li>
+  <li>
+    <p>classical bit</p>
+  </li>
+  <li>
+    <p>$n$ qubits</p>
+  </li>
+</ul>
+</div></div></section></main><footer id="site-footer"><div class="container"><div class="row"><div class="col-xs-6"><p>Quantum Computing is designed and developed by <a href="" target="_blank">Daniel Hernández Mota | Rodrigo Hernández Mota</a></p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/rhdzmota/quantum-computing"><span class="fa fa-github"></span>View on GitHub</a></p></div></div><div class="row"><div class="col-xs-6"><p>Website built with <a href="https://47deg.github.io/sbt-microsites/" target="_blank">Sbt-microsites</a> - © 2016 <a href="https://www.47deg.com/" target="_blank">47 Degrees</a></p></div></div></div></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="/quantum-computing/highlight/highlight.pack.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/fsharp.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script><script>hljs.configure({languages:['scala','java','bash','haskell','fsharp','scala','python']});
+hljs.initHighlighting();
+              </script><script src="/quantum-computing/js/mathjax-config.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML,https://oscarvarto.github.io/learning-scala/js/mathjax-config.js"></script></body></html>
